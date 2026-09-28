@@ -1,4 +1,4 @@
-// lib/bookModels.dart
+// lib/models/bookModels.dart
 class BookModel {
   final String title;
   final String author;
