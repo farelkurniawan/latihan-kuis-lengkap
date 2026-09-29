@@ -45,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
     String password = _passwordController.text;
 
     // Pengecekan data dummy
-    if (email == "admin" && password == "123") {
+    if (email == "farel" && password == "163") {
       setState(() {
         _isLoginFailed = false;
       });
@@ -92,7 +92,7 @@ class _LoginPageState extends State<LoginPage> {
               TextField(
                 controller: _emailController,
                 decoration: InputDecoration(
-                  hintText: 'Email (isi: admin)',
+                  hintText: 'Email (isi: farel)',
                   border: const OutlineInputBorder(),
                   // Ubah warna merah jika isLoginFailed true[cite: 3]
                   errorText: _isLoginFailed ? 'Email/Password salah' : null, 
@@ -105,7 +105,7 @@ class _LoginPageState extends State<LoginPage> {
                 controller: _passwordController,
                 obscureText: true, // Amankan inputan password (jadi titik-titik)[cite: 3]
                 decoration: InputDecoration(
-                  hintText: 'Password (isi: 123)',
+                  hintText: 'Password (isi: 163)',
                   border: const OutlineInputBorder(),
                   errorText: _isLoginFailed ? 'Email/Password salah' : null,
                 ),
